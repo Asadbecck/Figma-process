@@ -1,0 +1,225 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+} */
+
+
+.section-one .section-box {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    margin: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+/* .section-img {
+    width: 100%;
+    height: 100%;
+} */
+
+.section-one .section-box:hover {
+    z-index: 1;
+    transform: scale(1.45);
+    box-shadow: 0 25px 40px rgba(0, 0, 0, .5);
+}
+
+.section-one .section-box .imgBx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.section-one .section-box .imgBx::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    /* background-color: linear-gradient(180deg, #f00, #000); */
+    mix-blend-mode: multiply;
+    opacity: 0;
+    transition: .5s;
+}
+
+.section-one .section-box:hover .imgBx::after {
+    opacity: 1;
+}
+
+.section-box .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section-one .section-box .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    padding: 20px;
+    align-items: flex-end;
+}
+
+.section-one .section-box .content div {
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    left: 0;
+    height: 35%;
+    transform: translateY(200px);
+}
+
+.section-one .section-box:hover .content div {
+    transform: translateY(0px);
+    transition-delay: .3s;
+    width: 100%;
+    background: rgba(0, 2, 0, 0.8);
+    bottom: 0;
+}
+
+.section-one .section-box .content button {
+    color: #fff;
+    transition: .5s;
+    text-transform: uppercase;
+    background: #d51c34;
+    border-radius: 60px;
+    margin: 0px 0px 0px 13px;
+    padding: 5px;
+    border: none;
+    font-size: 12px;
+    transform: translateY(200px);
+}
+
+.section-one .section-box:hover .content button {
+    transform: translateY(0px);
+    transition-delay: .1.5s;
+}
+
+.section-one .section-box .content p {
+    transform: translateY(200px);
+    transition: .5s;
+    font-size: 10px;
+    margin: 13px;
+    color: #FFFFFF;
+}
+
+.section-one .section-box:hover .content p {
+    transform: translateY(0px);
+    transition-delay: .1.5s;
+}
+
+
+
+/* Title box */
+
+
+.section-one .section-box .title-box {
+    transform: translateY(-500px);
+    background: rgba(0, 0, 0, 0.47);
+    border-radius: 13px;
+    transition: .3s ease;
+    /* margin-bottom: 10px; */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50%;
+}
+
+.section-one .section-box:hover .title-box {
+    transform: translateY(0px);
+    transition: .3s ease;
+    width: 39%;
+    height: 18%;
+    background: rgba(0, 0, 0, 0.47);
+    bottom: 80%;
+}
+
+
+.section-one .section-box .title-box h5 {
+    transform: translateY(0px);
+    transition: .3s ease;
+    position: absolute;
+    font-weight: normal;
+    font-size: 12px;
+    bottom: 70%;
+    margin-left: 12px;
+    color: #ffffff;
+}
+
+
+.section-one .section-box .title-box button {
+    background: #FFFFFF;
+    border-radius: 10px;
+    border: none;
+    position: absolute;
+    top: 35%;
+    padding: 5px 15px;
+    color: rgb(0, 0, 0);
+    font-size: 10px;
+}
+
+
+
+
+
+
+
+/* Next bro */
+
+.section-one .section-box .next-box {
+    transform: translateY(-500px);
+    background: rgba(0, 0, 0, 0.47);
+    border-radius: 13px;
+    transition: .3s ease;
+    /* margin-bottom: 10px; */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50%;
+}
+
+.section-one .section-box:hover .next-box {
+    transform: translateY(50px);
+    transition: .2.5s ease;
+    width: 39%;
+    height: 18%;
+    background: rgba(0, 0, 0, 0.47);
+    bottom: 80%;
+}
+
+
+.section-one .section-box .next-box h5 {
+    transform: translateY(0px);
+    transition: .2.5s ease;
+    position: absolute;
+    font-size: 12px;
+    font-weight: normal;
+    bottom: 70%;
+    margin-left: 12px;
+    color: #ffffff;
+}
+
+
+.section-one .section-box .next-box button {
+    background: #FFFFFF;
+    border-radius: 10px;
+    border: none;
+    position: absolute;
+    top: 35%;
+    padding: 5px 15px;
+    color: rgb(0, 0, 0);
+    font-size: 10px;
+}
